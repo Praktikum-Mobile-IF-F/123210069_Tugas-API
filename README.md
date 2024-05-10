@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# kuisprakmobile
-
-A new Flutter project.
-
-## Getting Started
 
 This project is a starting point for a Flutter application.
 
@@ -21,4 +15,4 @@ samples, guidance on mobile development, and a full API reference.
 - **Name:** Muhammad Ahnaf Ardiansyah
 - **NIM:** 123210069
 - **API URL:** [https://swapi.dev/api/people](https://swapi.dev/api/people)
->>>>>>> df6854df96f8691e143084a7d970ae59a277ed57
+
