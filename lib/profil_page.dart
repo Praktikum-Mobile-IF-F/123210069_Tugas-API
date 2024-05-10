@@ -132,10 +132,9 @@ class _ProfilPageState extends State<ProfilPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 1, // Menandakan halaman ini sebagai halaman profil
+        currentIndex: 1,
         onTap: (index) {
           if (index == 0) {
-            // Jika index adalah 0, maka navigasi ke halaman Home
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => Homepage()),

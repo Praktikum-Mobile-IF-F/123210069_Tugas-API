@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kuisprakmobile/character.dart'; // Importing Character class
+import 'package:kuisprakmobile/character.dart';
 
 class DetailPage extends StatelessWidget {
   final Character character;

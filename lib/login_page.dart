@@ -42,7 +42,6 @@ class _LoginPageState extends State<LoginPage> {
     String email = _emailController.text.trim();
     String password = _passwordController.text.trim();
 
-    // Validasi email dan password
     RegExp emailRegExp = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     RegExp passwordRegExp = RegExp(r'^.{8,}$');
 
@@ -60,7 +59,6 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
 
-    // Bandingkan dengan data yang tersimpan
     String? storedPassword = logindata.getString(email);
 
     if (storedPassword == null || storedPassword != password) {
@@ -70,7 +68,6 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
 
-    // Jika berhasil, simpan status login dan arahkan ke Homepage
     logindata.setBool('login', true);
     logindata.setString('email', email);
     Navigator.pushReplacement(
@@ -101,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 20),
               Image.network(
                 'https://icon-library.com/images/star-wars-icon-vector/star-wars-icon-vector-0.jpg',
-                height: 100, // Sesuaikan tinggi gambar sesuai kebutuhan
+                height: 100,
               ),
               SizedBox(height: 20),
               TextField(

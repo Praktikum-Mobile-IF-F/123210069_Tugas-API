@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:kuisprakmobile/character.dart'; // Importing Character class
+import 'package:kuisprakmobile/character.dart';
 import 'package:kuisprakmobile/detail_page.dart';
 import 'package:kuisprakmobile/login_page.dart';
 import 'package:kuisprakmobile/profil_page.dart';
@@ -121,7 +121,6 @@ class _HomepageState extends State<Homepage> {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     await preferences.clear();
 
-    // Navigasi kembali ke halaman login
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => LoginPage()),
